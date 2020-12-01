@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<!-- Samer Hassinan -->
+<title>finalProjectGit417</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.typekit.net/cyq0zvs.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navHeader">
+            <span class="logoImg"><a href="#"><img src="images/logo.png" alt="vinyShop"></a></span>
+            <div class="navSection">
+            <span class="darkModeBtn"><a href="#"><img src="images/darkModeBtn.png" alt="darkMode Button"></a></span>
+            <span class="darkModeText"><a href="#">DARK</a></span>
+            <ul class="navList">
+                <li>LATEST</li>
+                <li>ABOUT</li>
+                <li>EVENTS</li>
+            </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <img src="images/hero.png" alt="heroImage">
+        </div>
+    </header>
+    <div class="productNav">
+        <div class="vinylLink">
+           <input onclick="toggleProduct('vinylProductDiv')" class="imgNav" type="image" src="images/vinylBtnWhite.png" alt="Picture of a Vinyl button CD">
+            <a href="#">Vinyl</a>
+        </div>
+        <div class="cdLink">
+            <input onclick="toggleProduct('cdProductDiv')" class="imgNav" type="image" src="images/cdBtnWhite.png" alt="Picture of a CD button">
+            <a href="#">CD</a>
+        </div>
+        <div class="tapeLink">
+            <input onclick="toggleProduct('tapeProductDiv')" class="imgNav" type="image" src="images/tapeBtnWhite.png" alt="Picture of a music tape button">
+            <a href="#">Tape</a>
+        </div>
+    </div>
+    <div class="main">
+        <div id="mainText">
+            <h2>NEW & USED</h2>
+            <img class="mainLogo" src="images/logoPurple.png" alt="purpleLogo">
+            <h1>music</h1>
+            <p id="mainTextDescription">Come in and check out our in house store for all of our artists latest releases<br>browse thousands of titles in all genres</p> 
+        </div>
+        <div id="vinylProductDiv" class="hide">
+            <img src="images/vinyls.png" alt="vinyls">
+            <p>
+                We have over 1,000 vinyl records to choose from<br>with new vinyl's from WARP artists<br>and thousands of used records from all genres
+            </p>
+        </div>
+        <div id="cdProductDiv" class="hide">
+            <img src="images/cds.png" alt="cd's">
+            <p>We carry all the latest releases from our discography of artists <br> alongside a vast collection of used cd's from all genres</p>
+        </div>
+        <div id="tapeProductDiv" class="hide">
+            <img src="images/tapes.png" alt="tapes">
+            <p>Our tape selection continues growing with new and used tapes <br>come check out new tape releases from Yves Tumor and Aphex twin <br>Or browse through our used tapes section<br> </p>
+        </div>
+    </div>
+      <div id="errorText"></div>
+      <div class="divForm">
+      <h2>NEWSLETTER</h2>
+       <form>
+           <fieldset class="contactForm">
+               <label for="fName">first name</label>
+               <input type="text" id="fName" name="fName" required="required">
+               <label for="lName">last name</label>
+               <input type="text" id="lName" name="lName" required="required">
+               <p>choose e-mail or phone</p>
+               <label for="eButton">e-mail</label>
+               <input type="radio" name="formButtons" id="eButton">
+               <label for="pButton">phone</label>
+               <input type="radio" name="formButtons" id="pButton"><br>
+               <label for="eInput">e-mail</label>
+               <input type="text" name="input" id="eInput">
+               <label for="pInput">phone number</label>
+               <input type="text" name="input" id="pInput"><br>
+               <label for="comment">comment</label>
+               <textarea name="comment" id="comment" cols="35" rows="5"></textarea>
+               <input type="submit" id="submitButton" value="submit">
+           </fieldset>
+       </form>
+    </div>
+    <footer>
+        <img src="images/logo.png" alt="footerLogo">
+        <p>(770) 343 0320 <br>store@warp.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

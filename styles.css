@@ -1,0 +1,304 @@
+/*Samer Hassinan*/
+
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body, html{
+background: #F2F2F4;
+}
+
+@media (min-width: 1200px){
+
+.logoImg{
+    grid-area: logoImg;
+    background: #612BEC;
+    padding-left: 50%;
+    padding-top: 20px
+    
+}
+.navList li{
+    letter-spacing: 5px;
+    position: relative;
+    left: 15%;
+}
+.darkModeBtn{
+    grid-area: darkModeBtn;
+    padding-left: 29px;
+    padding-top: 30px;
+    background: black;
+    float: left;
+}
+.darkModeText a{
+    position: absolute;
+    margin-left: -2%;;
+    margin-top: 33px;
+    color: white;
+    text-decoration: none;
+    font-family: "Upgrade Regular", sans-serif;
+    font-size: .7em;
+    
+}
+.bodyDarkMode {
+    background: #292929 !important;
+}
+.darkMode {
+    background: #141414 !important;
+    color: white;
+    
+}
+
+.darkMode * a {
+    color: white;
+}
+
+.navList{
+    grid-area: navList;
+    margin-left: 10%;
+    margin-top: 35px;
+}
+.navSection{
+    background: black;
+    grid-area: navSection;
+    margin-right: -100%;
+    width: 100%;
+}
+.navList li{
+    display: inline;
+    color: white;
+    padding-left: 5%;
+    font-family: "Upgrade Regular", sans-serif;
+    left: -9%;
+}
+.navHeader{
+    display: grid;
+    grid-template-columns: 315px;
+    grid-template-rows: 95px;
+    grid-template-areas: 
+        "logoImg navSection"
+}
+.hero{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.productNav{
+    position: relative;
+    z-index: 2;
+    bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1022px;
+    max-height: 70px;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 70px;
+    grid-template-areas: "vinylLink cdLink tapeLink";
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+}
+
+input[type="submit"].imgNav:hover{
+    border: #612BEC; 
+}
+.productNav input{
+    grid-area: vinylLink;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.productNav a{
+    position: absolute;
+    text-decoration: none;
+    color: #612BEC;
+    margin-top: 2%;
+    margin-left: 1%;
+    font-family: "Upgrade Bold", sans-serif;
+    font-weight: 600;
+}
+.main{
+    background: white;
+    max-width: 1100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 420px;
+    margin-bottom: 5%;
+}
+#mainText{
+    margin-left: 45%;
+    margin-top: 2%;
+    position: relative;
+    top: 100px;
+}
+#mainText h1{
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 900;
+    letter-spacing: .2em;
+    font-size: 25px;
+    position: relative;
+    right: 18.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.main img{
+    float: left;
+}
+
+h2{
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 9%;
+    letter-spacing: 2px;
+    position: relative;
+    right: 2.3%;
+    
+}
+.mainLogo{
+    float: left;
+    position: relative;
+    right: 25%;
+}
+.main p{
+    text-align: center;
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+#vinylProductDiv, #tapeProductDiv, #cdProductDiv {
+    position: relative;
+    top: 160px;
+}
+#vinylProductDiv p{
+    padding-top: 12%;
+    line-height: 40px;
+}
+#tapeProductDiv p{
+    padding-top: 12%;
+    line-height: 40px;
+}
+#cdProductDiv p{
+    padding-top: 12%;
+    line-height: 40px;
+}
+#mainText p{
+    text-align: center;
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 500;
+    position: relative;
+    right: 45%;
+    margin-top: 15%;
+}
+.divForm{
+    background-color: white;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10%;
+    max-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+    text-align: center;
+    padding-top: 4%;
+}
+.contactForm p{
+    margin-top: 3%;
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 500;
+    margin-right: 43%;
+}
+.contactForm label{
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 500;
+}
+.contactForm input[type=text],textarea{
+        background-color: #F1F1F1;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 12px 0 rgba(0, 0, 0, 0.14);
+        border: none;
+        margin-left: 2%;
+}
+#fName{
+    grid-area: fName;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+#lName{
+    grid-area: lName;
+}
+#eButton{
+    grid-area: eButton;
+    margin-right: 6%;
+    margin-top: 1%;
+}
+#pButton{
+    grid-area: pButton;
+    margin-top: 1%;
+    margin-right: 39.3%;
+}
+#eInput{
+    grid-area: eInput;
+    margin-right: 9%;
+}
+#pInput{
+    grid-area: pInput;
+    
+}
+#comment{
+    grid-area: comment;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: -2%;
+}
+#submitButton{
+    grid-area: submitButton;
+    background-color: #612BEC;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
+    position: relative;
+    font-family: "Upgrade";
+    font-size: 50px;
+    border: none;
+    padding-bottom: 10px;
+    right: 6%;
+}
+footer{
+    background-color: #612BEC;
+    min-height: 90px;
+    margin-top: 5%;
+}
+footer img{
+    float: left;
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+footer p{
+    font-family: "upgrade-lights", sans-serif;
+    font-weight: 990;
+    padding-top: 2.2%;
+    position: relative;
+    left: 3%;
+}
+/*sets the product divs to hidden so they are not seen on load*/
+.hide {
+    display: none;
+}
+}
